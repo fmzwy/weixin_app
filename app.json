@@ -9,28 +9,40 @@
     "pages/purchaserCenter/purchaserCenter"
   ],
   "window":{
+    "enablePullDownRefresh":true,
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor":"#ffffff",
+    "navigationBarBackgroundColor": "#fe4b00",
     "navigationBarTitleText": "demo1",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"white"
   },
   "tabBar": {
     "borderStyle": "white",
     "selectedColor": "#fe4b00",
     "list": [{
       "pagePath": "pages/home/home",
+      "iconPath": "images/icons/home-default.png",
+      "selectedIconPath": "images/icons/home-active.png",
       "text": "首页"
     }, {
       "pagePath": "pages/providerList/providerList",
+      "iconPath": "images/icons/provider-default.png",
+      "selectedIconPath": "images/icons/provider-active.png",
       "text": "商家"
     },{
       "pagePath": "pages/shoppingCart/shoppingCart",
+      "iconPath": "images/icons/buy-list-default.png",
+      "selectedIconPath": "images/icons/buy-list-active.png",
       "text": "进货单"
     },{
       "pagePath": "pages/jf/jf",
+      "iconPath": "images/icons/jf-default.png",
+      "selectedIconPath": "images/icons/jf-active.png",
       "text": "兑换"
     },{
       "pagePath": "pages/purchaserCenter/purchaserCenter",
+      "iconPath": "images/icons/my-default.png",
+      "selectedIconPath": "images/icons/my-active.png",
       "text": "我的"
     }]
   }

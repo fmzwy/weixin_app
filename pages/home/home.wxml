@@ -1,4 +1,11 @@
 <!--home.wxml-->
-<view>
-  
+<view class="top-search" bindtap="searchtap" style="background:{{ scrollTop === 0 ?'-webkit-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0))' :( scrollTop<200 ? 'rgba(254, 72, 0,'+(scrollTop/400+0.3) +')' : 'rgba(254,72,0,0.8)')  }} ">
+		<view class="search-box">
+			<view class="search-input" bindtap="searchtap">
+        <icon type="search" size="12" />
+        <text>请输入搜索内容</text>
+      </view>
+		</view>
 </view>
+<scroll-view class="full-screen" scroll-y="true" bindscroll='scrollY'>
+</scroll-view>

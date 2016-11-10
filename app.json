@@ -5,15 +5,14 @@
     "pages/home/home",
     "pages/providerList/providerList",
     "pages/shoppingCart/shoppingCart",
-    "pages/jf/jf",
-    "pages/purchaserCenter/purchaserCenter"
+    "pages/jfStore/jfStore",
+    "pages/purchaserCenter/purchaserCenter",
+    "pages/productDetail/productDetail"
   ],
   "window":{
-    "enablePullDownRefresh":true,
     "backgroundTextStyle":"light",
     "backgroundColor":"#ffffff",
     "navigationBarBackgroundColor": "#fe4b00",
-    "navigationBarTitleText": "demo1",
     "navigationBarTextStyle":"white"
   },
   "tabBar": {
@@ -35,7 +34,7 @@
       "selectedIconPath": "images/icons/buy-list-active.png",
       "text": "进货单"
     },{
-      "pagePath": "pages/jf/jf",
+      "pagePath": "pages/jfStore/jfStore",
       "iconPath": "images/icons/jf-default.png",
       "selectedIconPath": "images/icons/jf-active.png",
       "text": "兑换"

@@ -3,9 +3,9 @@
   "pages":[
     "pages/index/index",
     "pages/home/home",
-    "pages/providerList/providerList",
     "pages/shoppingCart/shoppingCart",
-    "pages/jfStore/jfStore",
+    "pages/providerList/providerList",
+    "pages/goldMall/goldMall",
     "pages/purchaserCenter/purchaserCenter",
     "pages/productDetail/productDetail"
   ],
@@ -34,7 +34,7 @@
       "selectedIconPath": "images/icons/buy-list-active.png",
       "text": "进货单"
     },{
-      "pagePath": "pages/jfStore/jfStore",
+      "pagePath": "pages/goldMall/goldMall",
       "iconPath": "images/icons/jf-default.png",
       "selectedIconPath": "images/icons/jf-active.png",
       "text": "兑换"

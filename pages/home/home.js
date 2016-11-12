@@ -6,10 +6,21 @@ Page({
     scrollTop:0,
     height:"1000px"
   },
-  onLoad: function () {
+  onLoad: function (opts) {
+   console.log("onload");
+   console.log(opts);
+   console.log("onload");
+  },
+  onUnload: function (opts) {
+   console.log("onUnload");
    
   },
   onReady:function(){
+  },
+  onShow:function(opts){
+    console.log("onshow");
+   console.log(opts);
+   console.log("onshow");
   },
   //搜索框点击
   searchtap:function(){

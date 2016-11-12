@@ -1,9 +1,9 @@
 <template name="swiper">
-<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-  <block wx:for="{{imgUrls}}">
-    <swiper-item>
-      <image src="{{item}}" class="slide-image" style="width:100%;height:100%"/>
-    </swiper-item>
-  </block>
-</swiper>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" >
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <navigator style="width:100%;height:100%" url="/pages/home/home"><image src="{{item}}" class="slide-image" style="width:100%;height:100%"/></navigator>
+      </swiper-item>
+    </block>
+  </swiper>
 </template>

@@ -1,8 +1,15 @@
 <template name="swiper">
-  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" >
+  <swiper style="height:{{height||'160px'}}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" >
     <block wx:for="{{imgUrls}}">
       <swiper-item>
-        <navigator style="width:100%;height:100%" url="/pages/home/home"><image src="{{item}}" class="slide-image" style="width:100%;height:100%"/></navigator>
+        <block wx:if="{{toPage[index]}}">
+          <navigator style="width:100%;height:100%" url="{{toPage[index]}}">
+            <image src="{{item}}" class="slide-image" style="width:100%;height:100%"/>
+          </navigator>
+        </block>
+        <block wx:else>
+          <image src="{{item}}" class="slide-image" style="width:100%;height:100%"/>
+        </block>
       </swiper-item>
     </block>
   </swiper>

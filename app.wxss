@@ -1,4 +1,8 @@
 /**app.wxss**/
+page{
+  color:#444;
+  font-family: "Microsoft YaHei";
+}
 .container {
   height: 100%;
   display: flex;
@@ -8,3 +12,19 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+/*flex布局*/
+.flex-wrap{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.flex-wrap .flex-item {
+    flex: 1;
+}
+
+/*标题*/
+.h4{
+  display: block;
+  font-weight:600;
+}

@@ -1,5 +1,6 @@
 //home.js
 //获取应用实例
+var ajax = require('../../utils/ajax.js')
 var app = getApp()
 Page({
   data: {
@@ -91,22 +92,19 @@ Page({
    console.log("onload");
    console.log(opts);
    console.log("onload");
-  //  wx.request({
-  //     url: '', 
-  //     data: {
-  //       x: '' ,
-  //       y: ''
-  //     },
-  //     header: {
-  //         'Content-Type': 'application/json'
-  //     },
-  //     success: function(res) {
-  //       console.log(res.data)
-  //     }
-  //  })
-    this.setData({
+  //  debugger;
+   wx.request({
+      url: 'http://wap.yijicai.cn/wap/data/get?action=tbIndex', 
+      // header: {
+      //     'Content-Type': 'application/json'
+      // },
+      success: function() {
+        console.log("ajaxxxxxxxxxxxxxxxx")
+      }
+   });
+    // this.setData({
       
-    })
+    // })
   },
   onUnload: function (opts) {
    console.log("onUnload");

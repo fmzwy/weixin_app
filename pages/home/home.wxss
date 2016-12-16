@@ -81,10 +81,10 @@ page{
     color: #fff;
     text-align: center;
 }
-.group-item.time-will .imgBox .group-status{
+.group-item.time-will .imgBox .group-status,.group-item.time-will .imgBox .timeBox{
     background:#7555f4;
 }
-.group-item.time-end .imgBox .group-status{
+.group-item.time-end .imgBox .group-status,.group-item.time-end .imgBox .timeBox{
     background:#aaa;
 }
 .group-item .imgBox .group-status::after{

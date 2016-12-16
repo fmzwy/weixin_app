@@ -31,17 +31,25 @@
           <image class="group-img" src='{{group.teamBuyingImg}}'></image>
         </view>
         <view class="timeBox">
-          <text class="time-tip">距结束</text>
-          <text class="hour time-item">3</text>
-          <text class="hour time-item">3</text>
-          <text>:</text>
-          <text class="min time-item">0</text>
-          <text class="min time-item">5</text>
-          <text>:</text>
-          <text class="sec time-item">1</text>
-          <text class="sec time-item">7</text>
-          <text>:</text>
-          <text class="minSec time-item">2</text>
+          <block wx:if="{{group.time == 0}}"> 
+            已结束
+          </block>
+          <view wx:elif="{{group.time < 0}}">
+            未开始
+          </view>
+          <block wx:else>
+            <text class="time-tip">距结束</text>
+            <text class="hour time-item">{{group.timeObj && group.timeObj.hour[0]}}</text>
+            <text class="hour time-item">{{group.timeObj && group.timeObj.hour[1]}}</text>
+            <text>:</text>
+            <text class="min time-item">{{group.timeObj && group.timeObj.min[0]}}</text>
+            <text class="min time-item">{{group.timeObj && group.timeObj.min[1]}}</text>
+            <text>:</text>
+            <text class="sec time-item">{{group.timeObj && group.timeObj.sec[0]}}</text>
+            <text class="sec time-item">{{group.timeObj && group.timeObj.sec[1]}}</text>
+            <text>:</text>
+            <text class="minSec time-item">{{group.timeObj && group.timeObj.minSec}}</text>
+          </block>
         </view>
       </view>
       <view class="group-des">
